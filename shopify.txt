@@ -1,0 +1,49 @@
+node
+npm
+ruby
+cli  install: npm install -g @shopify/cli @shopify/theme
+
+For CLI 2 liquid
+shopify login --store=feb398
+shopify theme pull (For pull themes)
+shopify theme push (For push theme changes)
+shopify theme serve (For run after changes to view)
+shopify theme init (For create custom theme)
+
+For CLI 3+ liquid 
+shopify auth logout
+shopify theme dev --store my-store
+shopify theme init
+shopify theme pull / push
+shopify theme dev
+----------------------------------
+
+For CLI 3 and hydrogen:
+npm create @shopify/hydrogen@latest
+cd project name
+npm run dev
+with h2 alias replace "shopify hydrogen dev" to "h2 dev"
+
+--------------------------------------------------------------
+
+1. Custom Shopify Apps
+Private Apps: These are apps created for a specific store. They are not listed on the Shopify App Store and are used to extend the functionality of a single Shopify store. These apps can be created using any technology that can communicate with the Shopify API.
+Custom Apps: Similar to private apps but without API key limits. These apps are intended for merchants who require more customization but do not want to publish their apps on the Shopify App Store.
+
+2. Public Shopify Apps
+Listed Apps: These are apps listed on the Shopify App Store, available for any Shopify merchant to install. Creating a public app typically requires a more rigorous development process, including adhering to Shopify’s guidelines and security standards.
+Unlisted Apps: Public apps that are not listed on the Shopify App Store but can be installed by anyone with the app link.
+
+3. Shopify App Bridge and Embedded Apps
+Embedded Apps: These are apps that are embedded directly into the Shopify admin. They use Shopify App Bridge to create a seamless experience within the Shopify dashboard. These apps are typically developed using frameworks like React, Node.js, and Shopify Polaris.
+Stand-alone Apps: These apps run independently of the Shopify admin and are accessed via an external URL. They still interact with the Shopify API but do not require embedding into the Shopify dashboard.
+
+4. Shopify Scripts and Flow
+Shopify Scripts: These are small pieces of code that run on a Shopify store’s checkout page. They allow you to create personalized experiences like dynamic discounts, custom shipping methods, or payment gateways. Scripts are written in Ruby.
+Shopify Flow: This is an automation platform that lets you create automated workflows for tasks like inventory management, order processing, and customer segmentation without writing code.
+
+5. Shopify CLI
+Using Shopify CLI (Command Line Interface): This is a tool for generating, building, and deploying Shopify apps quickly. It’s useful for developers who want to streamline their app development process.
+
+6. Headless Commerce
+Shopify Storefront API: You can build custom storefronts using any front-end technology (e.g., React, Angular) while using Shopify as the backend via the Storefront API. This is a popular approach for headless commerce setups.

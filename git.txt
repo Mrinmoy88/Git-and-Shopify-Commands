@@ -1,0 +1,22 @@
+git init
+git add . [all files] OR git add example.txt [specific file] OR git rm -r --cached . [to remove all files]
+git commit -m "Add example.txt"
+git remote remove origin
+git remote add origin <link>
+git push -f origin HEAD:main OR git push -u origin main
+git clone https://github.com/username/repository.git [for cloning]
+==========
+git config --global --list [to ceck on which ac you are in]
+[to logout use below]
+git config --global --unset user.name
+git config --global --unset user.email
+[to login use below]
+git config --global user.name "New User Name"
+git config --global user.email "newemail@example.com"
+================
+TO remove any account from local system, do below
+control pabnel--> user accounts --> manage creds --> remove anything related to Github
+
+
+
+
